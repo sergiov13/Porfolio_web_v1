@@ -1,14 +1,14 @@
 var plugins = [{
       name: 'gatsby-plugin-styled-components',
-      plugin: require('C:/Users/PC/Desktop/Git/GIT/Personal_Web/personal_web/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('C:/Users/PC/Desktop/Git/GIT/Personal_Web/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"topLevelImportPaths":[],"pure":false},
     },{
       name: 'gatsby-plugin-image',
-      plugin: require('C:/Users/PC/Desktop/Git/GIT/Personal_Web/personal_web/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      plugin: require('C:/Users/PC/Desktop/Git/GIT/Personal_Web/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('C:/Users/PC/Desktop/Git/GIT/Personal_Web/personal_web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/PC/Desktop/Git/GIT/Personal_Web/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
