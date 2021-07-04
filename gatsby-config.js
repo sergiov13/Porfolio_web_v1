@@ -1,3 +1,4 @@
+const path = require (`path`)
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -10,6 +11,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    'gatsby-plugin-react-helmet',
     {
       resolve: "gatsby-source-filesystem",
       options: {
