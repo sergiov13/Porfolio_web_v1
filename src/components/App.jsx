@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
-import { BrowserRouter as Router } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import HeroSection from './HeroSection';
 import InfoSection from './InfoSection';
@@ -15,7 +14,7 @@ const App = () => {
     SetIsOpen(!isOpen);
   }
   return ( 
-    <Router>
+    <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection />
@@ -23,7 +22,7 @@ const App = () => {
       <InfoSection {...homeObj2} />
       <Services />
       <Contact />
-    </Router>
+    </>
   );
 }
 
