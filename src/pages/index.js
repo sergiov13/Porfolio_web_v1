@@ -8,7 +8,7 @@ const index = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={App} exact />
+        <Route component={App} exact />
       </Switch>
     </Router>
   );
