@@ -4,7 +4,6 @@ import {
   ContactScreen,
   ContactScreenHeader,
   ContactScreenHeaderLeft,
-  ContactScreenHeaderButton,
   ContactScreenHeaderButtonClose,
   ContactScreenHeaderButtonMaximize,
   ContactScreenHeaderButtonMinimize,
@@ -20,9 +19,8 @@ import {
   ContactAppFormGroupButtons,
   ContactAppFormControl,
   ContactAppFormButton,
-  InfoWrapper,
   SectionGroup,
-  WaveTop
+  WaveTop,
 } from './ContactElements'
 import Wave from '../Wave'
 
@@ -45,64 +43,77 @@ const Contact = () => {
   }
 
   return (
-   <SectionGroup>
+    <SectionGroup>
       <WaveTop>
         <Wave />
       </WaveTop>
-          <ContactContainer>
-            <ContactScreen>
-              <ContactScreenHeader>
-                <ContactScreenHeaderLeft>
-                  <ContactScreenHeaderButtonClose />
-                  <ContactScreenHeaderButtonMaximize />
-                  <ContactScreenHeaderButtonMinimize />
-                </ContactScreenHeaderLeft>
-                <ContactScreenHeaderRight>
-                  <ContactScreenHeaderEllipsis />
-                  <ContactScreenHeaderEllipsis />
-                  <ContactScreenHeaderEllipsis />
-                </ContactScreenHeaderRight>
-              </ContactScreenHeader>
-              <ContactScreenBody>
-                <ContactScreenBodyItemLeft>
-                  <ContactAppTitle>
-                    <span>Get In Touch</span>
-                  </ContactAppTitle>
-                  <ContactAppContact>
-                    CONTACT INFO : Sergioworking247@gmail.com
-                  </ContactAppContact>
-                </ContactScreenBodyItemLeft>
-                <ContactScreenBodyItem>
-                  <div class="app-form">
-                    <ContactAppFormGroup>
-                      <ContactAppFormControl
-                        class="app-form-control"
-                        placeholder="NAME"
-                      />
-                    </ContactAppFormGroup>
-                    <ContactAppFormGroup>
-                      <ContactAppFormControl
-                        class="app-form-control"
-                        placeholder="EMAIL"
-                      />
-                    </ContactAppFormGroup>
-                    <ContactAppFormGroupMessage>
-                      <ContactAppFormControl
-                        class="app-form-control"
-                        placeholder="MESSAGE"
-                      />
-                    </ContactAppFormGroupMessage>
-                    <ContactAppFormGroupButtons>
-                      <ContactAppFormButton >
-                        SEND
-                      </ContactAppFormButton>
-                    </ContactAppFormGroupButtons>
-                  </div>
-                </ContactScreenBodyItem>
-              </ContactScreenBody>
-            </ContactScreen>
-          </ContactContainer>
-        </SectionGroup>
+      <ContactContainer>
+        <ContactScreen>
+          <ContactScreenHeader>
+            <ContactScreenHeaderLeft>
+              <ContactScreenHeaderButtonClose />
+              <ContactScreenHeaderButtonMaximize />
+              <ContactScreenHeaderButtonMinimize />
+            </ContactScreenHeaderLeft>
+            <ContactScreenHeaderRight>
+              <ContactScreenHeaderEllipsis />
+              <ContactScreenHeaderEllipsis />
+              <ContactScreenHeaderEllipsis />
+            </ContactScreenHeaderRight>
+          </ContactScreenHeader>
+          <ContactScreenBody>
+            <ContactScreenBodyItemLeft>
+              <ContactAppTitle>
+                <span>Get In Touch</span>
+              </ContactAppTitle>
+              <ContactAppContact>
+                CONTACT INFO : Sergioworking247@gmail.com
+              </ContactAppContact>
+            </ContactScreenBodyItemLeft>
+            <form onSubmit={handleSubmit}>
+              <ContactScreenBodyItem>
+                <div class="app-form">
+                  <ContactAppFormGroup>
+                    <ContactAppFormControl
+                      id="name"
+                      type="text"
+                      name="name"
+                      onChange={handleChange}
+                      value={formState.name}
+                      placeholder="Name"
+                    />
+                  </ContactAppFormGroup>
+                  <ContactAppFormGroup>
+                    <ContactAppFormControl
+                      id="email"
+                      type="text"
+                      name="email"
+                      onChange={handleChange}
+                      value={formState.email}
+                      placeholder="Email"
+                    />
+                  </ContactAppFormGroup>
+                  <ContactAppFormGroupMessage>
+                    <ContactAppFormControl
+                      id="message"
+                      type="text"
+                      name="message"
+                      onChange={handleChange}
+                      value={formState.message}
+                      placeholder="Message"
+                      cols="25"
+                    />
+                  </ContactAppFormGroupMessage>
+                  <ContactAppFormGroupButtons>
+                    <ContactAppFormButton>SEND</ContactAppFormButton>
+                  </ContactAppFormGroupButtons>
+                </div>
+              </ContactScreenBodyItem>
+            </form>
+          </ContactScreenBody>
+        </ContactScreen>
+      </ContactContainer>
+    </SectionGroup>
   )
 }
 

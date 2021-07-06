@@ -41,12 +41,7 @@ const Section = () => {
           <form onSubmit={handleSubmit}>
             <SectionText>
               <Input
-                id="name"
-                type="text"
-                name="name"
-                onChange={handleChange}
-                value={formState.name}
-                placeholder="Name"
+               
               />
             </SectionText>
             <SectionText>
