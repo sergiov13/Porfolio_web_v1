@@ -19,7 +19,7 @@ export const HeroContainer = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+        background: linear-gradient(350deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
     }
 `
@@ -51,13 +51,26 @@ export const HeroContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: Left;
 `
 
 export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 48px;
-    text-align: center;
+    text-align: Left;
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
+`
+export const HeroH4 = styled.h4`
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
 
     @media screen and (max-width: 768px) {
         font-size: 40px;
@@ -72,7 +85,7 @@ export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;
     font-size: 24px;
-    text-align: center ;
+    text-align: Left;
     max-width: 600px;
 
     @media screen and (max-width: 768px) {
@@ -85,7 +98,7 @@ export const HeroP = styled.p`
 `
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,4 +111,22 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
+`
+
+export const Logos = styled.div`
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 90px;
+    margin: 100px 0;
+    justify-items: center;
+    
+    @media (max-width: 640px) {
+         grid-template-columns: repeat(3, 1fr);
+    }
+`
+
+export const WaveBottom = styled.div`
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
 `

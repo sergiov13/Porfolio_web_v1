@@ -76,7 +76,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  
+                  offset={-80}
                 >
                   Projects
                 </NavLinks>
@@ -88,14 +88,14 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  
+                  offset={-80}
                 >
                   Contact
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin"> Resume </NavBtnLink>
+              <NavBtnLink to="/Resume"> Resume </NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

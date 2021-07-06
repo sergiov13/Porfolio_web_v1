@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #35bdb0;
     }
 `;
 
@@ -95,21 +95,47 @@ export const NavBtn = styled.nav`
     }
 `
 
+// export const NavBtnLink = styled.div`
+//     border-radius: 50px;
+//     background: #01bf71;
+//     white-space: nowrap;
+//     padding: 10px 22px;
+//     color: #010606;
+//     font-size: 16px;
+//     outline: none;
+//     border:none ;
+//     cursor: pointer;
+//     transition: all 0.2s ease-in-out;
+//     text-decoration: none;
+//     &:hover{
+//         transition: all 0.2s ease-in-out;
+//         background: #fff;
+//         color: #010606
+//     }
+// `
+
 export const NavBtnLink = styled.div`
-    border-radius: 50px;
-    background: #01bf71;
-    white-space: nowrap;
-    padding: 10px 22px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border:none ;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-size: 13px;
+    line-height: 1;
     text-decoration: none;
-    &:hover{
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+
+    height: ${({name}) => (name === 'message' ? '200px' : '')};
+
+    &:hover,
+    &:focus,
+    &:active {
+    background-color: rgba(100, 255, 218, 0.1) ;
+    outline: none;
+    }
+    &:after {
+    display: none !important;
     }
 `
