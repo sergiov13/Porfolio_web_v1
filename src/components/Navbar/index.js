@@ -18,7 +18,7 @@ const Navbar = ({ toggle }) => {
   const [scrollNav, SetScrollNav] = useState(false)
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 70) {
       SetScrollNav(true)
     } else {
       SetScrollNav(false)
@@ -95,7 +95,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/Resume"> Resume </NavBtnLink>
+              <NavBtnLink to="../../images/Resume.pdf"> Resume </NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

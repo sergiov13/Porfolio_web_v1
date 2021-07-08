@@ -5,7 +5,8 @@ export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and (max-width: 768px){
-        padding: 100% 0;
+        padding: 15px;
+        height: 500px;
     }
 `
 export const InfoWrapper =styled.div`
@@ -18,7 +19,9 @@ export const InfoWrapper =styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
-
+    @media screen and (max-width: 600px) {
+        height: 450px;
+    }
 `
 
 export const InfoRow = styled.div`
@@ -51,6 +54,10 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+        
+    @media screen and (max-width: 768px) {
+        padding-bottom: 10px;
+    }
 `
 
 export const TopLine = styled.p`
@@ -97,4 +104,9 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+
+    @media screen and (max-width: 768px) {
+        width: 50%;
+
+    }
 `

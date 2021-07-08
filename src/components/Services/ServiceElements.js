@@ -9,11 +9,13 @@ export const ServicesContainer = styled.div`
     background: #010606;
 
     @media screen and ( max-width: 768px) {
+        padding: 20px;
         height: 1100px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1300px;
+        padding: 20px;
+        height: 1000px;
     }
 `
 
@@ -57,6 +59,7 @@ export const ServicesCard = styled.div`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
+
  `
 
  export const ServicesH1 = styled.h1`

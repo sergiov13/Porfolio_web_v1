@@ -5,7 +5,7 @@ import HeroSection from './HeroSection';
 import InfoSection from './InfoSection';
 import { homeObj, homeObj2 } from './InfoSection/Data';
 import Services from './Services';
-import Contact from './Contact2';
+import Contact from './Contact';
 
 const App = () => {
   const [isOpen, SetIsOpen] = useState(false);
