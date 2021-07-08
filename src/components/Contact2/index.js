@@ -43,7 +43,7 @@ const Contact = () => {
   }
 
   return (
-    <SectionGroup>
+    <SectionGroup id="contact">
       <WaveTop>
         <Wave />
       </WaveTop>
@@ -67,12 +67,13 @@ const Contact = () => {
                 <span>Get In Touch</span>
               </ContactAppTitle>
               <ContactAppContact>
-                CONTACT INFO : Sergioworking247@gmail.com
+                CONTACT INFO : <br />
+                Sergioworking247@gmail.com
               </ContactAppContact>
             </ContactScreenBodyItemLeft>
-            <form onSubmit={handleSubmit}>
-              <ContactScreenBodyItem>
-                <div class="app-form">
+            <ContactScreenBodyItem>
+              <form onSubmit={handleSubmit}>
+                <div>
                   <ContactAppFormGroup>
                     <ContactAppFormControl
                       id="name"
@@ -108,8 +109,8 @@ const Contact = () => {
                     <ContactAppFormButton>SEND</ContactAppFormButton>
                   </ContactAppFormGroupButtons>
                 </div>
-              </ContactScreenBodyItem>
-            </form>
+              </form>
+            </ContactScreenBodyItem>
           </ContactScreenBody>
         </ContactScreen>
       </ContactContainer>

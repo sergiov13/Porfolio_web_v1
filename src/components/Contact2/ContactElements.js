@@ -5,9 +5,9 @@ export const SectionGroup = styled.div`
     height: 720px;
     background-size: cover;
     display: flex;
-    grid-template-rows: 300px auto;
+    /* grid-template-rows: 300px auto; */
     padding: 0 30px;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
     position: relative;
     z-index: 1;
     justify-content: center;
@@ -22,6 +22,9 @@ export const ContactContainer = styled.div`
   flex: 0 1 700px;
   margin: auto;
   padding: 130px 0 0 0;
+  @media screen and (max-width: 600px) {
+    padding: 40px;
+  }
 `
 
 export const ContactScreen = styled.div` 
@@ -42,6 +45,13 @@ export const ContactScreen = styled.div`
   box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
   z-index: -1;
 }
+
+@media (max-width: 480px) {
+  justify-content: center;
+  align-items: center;
+      
+  }
+
 `
 
  export const ContactScreenHeader = styled.div `
@@ -114,14 +124,23 @@ export const ContactScreenBody = styled.div`
 
 export const ContactScreenBodyItem = styled.div`
   flex: 1;
-  padding: 40px;
+  padding: 35px;
+  width: fill;
 `
 
 export const ContactScreenBodyItemLeft = styled.div`
-  flex: 1;
-  padding: 30px;
   display: flex;
+  padding: 30px;
+  width: auto;
   flex-direction: column;
+  
+  /* @media (max-width: 480px) {
+  justify-content: center;
+  align-items: center;
+  padding: 10px ;
+  size: 50%;
+  } */
+
 `
 
 export const ContactAppTitle = styled.div`

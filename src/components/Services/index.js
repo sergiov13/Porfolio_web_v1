@@ -35,7 +35,6 @@ export const Services = () => {
               <ServicesH2>Backend</ServicesH2>
               <ServicesP>
                 This is also my sauce I can do front and back now biatch
-                
               </ServicesP>
             </ServicesCard>
           </ServiceWrapper>
