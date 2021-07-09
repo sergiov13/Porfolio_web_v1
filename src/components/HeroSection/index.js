@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Video from '../../videos/HeroVideo/video.mp4'
 import {
   HeroContainer,
   HeroBg,
@@ -33,7 +32,6 @@ const HeroSection = () => {
     <>
       <HeroContainer>
         <HeroBg>
-          <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
         </HeroBg>
         <WaveBottom>
           <Wave />

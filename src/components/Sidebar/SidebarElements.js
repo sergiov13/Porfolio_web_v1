@@ -41,9 +41,10 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    z-index: -1;
 
-    @media screen and (max-width: 480px){
-        grid-template-rows: repeat(6 60px);
+    @media screen and (max-width: 820px){
+        grid-template-rows: repeat(6, 60px);
     }
 `
 
@@ -68,24 +69,50 @@ export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
 `
-
 export const SideBarRoute = styled.div`
-    border-radius: 50px;
-    background: #01bf71;
-    white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 5px;
+    padding:12px 60px;
+    font-size: 18px;
+    /* line-height: 1; */
     text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    text-align: center;
+    justify-content: center;
 
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+    height: ${({name}) => (name === 'message' ? '200px' : '')};
+
+    &:hover,
+    &:focus,
+    &:active {
+    background-color: rgba(100, 255, 218, 0.1) ;
+    outline: none;
+    }
+    &:after {
+    display: none !important;
     }
 `
+
+// export const SideBarRoute = styled.div`
+//     border-radius: 50px;
+//     background: #01bf71;
+//     white-space: nowrap;
+//     padding: 16px 50px;
+//     color: #010606;
+//     font-size: 16px;
+//     outline: none;
+//     border: none;
+//     cursor: pointer;
+//     transition: all 0.2s ease-in-out;
+//     text-decoration: none;
+
+//     &:hover {
+//         transition: all 0.2s ease-in-out;
+//         background: #fff;
+//         color: #010606;
+//     }
+// `
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background: linear-gradient(to top right, #233554 0%, #0a192f 100%) #0a192f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +19,8 @@ export const HeroContainer = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(350deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
+        background: linear-gradient(to top right, #233554 0%, #0a192f 100%) #0a192f;
     }
 
 
@@ -39,7 +39,7 @@ export const HeroBg = styled.div`
 
 `
 
-export const VideoBg = styled.video`
+export const VideoBg = styled.div`
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -89,6 +89,7 @@ export const HeroH4 = styled.h4`
     text-align: left;
 
     @media screen and (max-width: 768px) {
+        padding: 80px 0 0 0;
         font-size: 40px;
     }
 
@@ -136,8 +137,9 @@ export const Logos = styled.div`
     margin: 100px 0;
     justify-items: center;
     
-    @media (max-width: 640px) {
+    @media (max-width: 820px) {
          grid-template-columns: repeat(3, 0.5fr);
+         padding: 5px ;
          grid-gap: 50px;
     }
 `
@@ -146,4 +148,5 @@ export const WaveBottom = styled.div`
     position: absolute;
     width: 100%;
     bottom: -6px;
+    z-index: 2;
 `

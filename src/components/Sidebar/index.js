@@ -12,7 +12,7 @@ import {
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer isOpen={isOpen} >
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -60,7 +60,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLink>
           <SideBtnWrap>
            
-            <SideBarRoute to="/signin">Resume</SideBarRoute>
+            <SideBarRoute to="/signin"> Resume </SideBarRoute>
           </SideBtnWrap>
         </SidebarMenu>
       </SidebarWrapper>
