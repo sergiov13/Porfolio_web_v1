@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
   HeroContent,
   HeroH1,
   HeroH4,
@@ -37,12 +36,11 @@ const HeroSection = () => {
           <Wave />
         </WaveBottom>
         <HeroContent>
-          <HeroH4>Hi! My name is</HeroH4>
-          <HeroH1> Sergio Villarroel </HeroH1>
+          <HeroH4>Hi! my name is</HeroH4>
+          <HeroH1>Sergio Villarroel</HeroH1>
           <HeroP>
             {' '}
-            I make things on the internet mainly focused in the backend but able
-            to build responsive and interactive UI.
+            I'm Full Stack Web developer focused on building interactive and responsive Front ends with dynamic backends.
           </HeroP>
           <HeroBtnWrapper>
             <Button

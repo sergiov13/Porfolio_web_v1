@@ -8,7 +8,7 @@ export const homeObj = {
     description: 'With more that 5 year of development web interfaces and backends usign up to date skills and technologies',
     buttonLabel: 'Get Started',
     imgStart: false,
-    img: require('../../images/logo-js.png'),
+    img: require('../../images/me.jpg'),
     alt: 'car',
     dark: true,
     primary: true,

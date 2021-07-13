@@ -1,5 +1,8 @@
 import React from 'react'
-import Icon1 from '../../images/logo-react.png'
+import Icon3 from '../../images/logo-react.png'
+import Icon2 from '../../images/logo-selenium.svg'
+import Icon1 from '../../images/logo-python.svg'
+
 import {
   ServicesContainer,
   ServicesH1,
@@ -18,23 +21,23 @@ export const Services = () => {
           <ServiceWrapper>
             <ServicesCard>
               <ServicesIcon src={Icon1} />
-              <ServicesH2>Something Something</ServicesH2>
+              <ServicesH2>Spotify Rooms</ServicesH2>
               <ServicesP>
-                I provericed efficient and nice pages with this technologies
+                Room where people logged into unique rooms could vote for a song. Implemented Python, Django, Spotify API, React, JS.
               </ServicesP>
             </ServicesCard>
             <ServicesCard>
-              <ServicesIcon src={Icon1} />
+              <ServicesIcon src={Icon2} />
               <ServicesH2>QA Automation</ServicesH2>
               <ServicesP>
-                Selenioum and all that shit you know its pretty cool to make
+                Web Scrapper implementing Selenium, Python and JS.
               </ServicesP>
             </ServicesCard>
             <ServicesCard>
-              <ServicesIcon src={Icon1} />
-              <ServicesH2>Backend</ServicesH2>
+              <ServicesIcon src={Icon3} />
+              <ServicesH2>Photos Porfolio</ServicesH2>
               <ServicesP>
-                This is also my sauce I can do front and back now biatch
+                Made an Interactive portfolio WebPage with diferent artist. With React, JS, Gatsby, Netlify.
               </ServicesP>
             </ServicesCard>
           </ServiceWrapper>
