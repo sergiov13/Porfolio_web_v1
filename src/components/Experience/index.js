@@ -6,10 +6,6 @@ import {
 
 
 const ExperienceSection = experience => {
-    
-    console.log(experience);
-    console.log(experience.jobs);
-
  return (
     <StyleSection>
   <section className="section experience" id="experience">
