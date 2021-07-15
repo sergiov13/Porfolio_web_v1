@@ -38,8 +38,23 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = e => {
-    e.preventDefault()
+  function encode(data) {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&")
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        ...formState
+      })
+    }).then(() => alert("Success!"))
+      .catch(error => alert(error))
   }
 
   return (
@@ -72,7 +87,8 @@ const Contact = () => {
               </ContactAppContact>
             </ContactScreenBodyItemLeft>
             <ContactScreenBodyItem>
-              <form onSubmit={handleSubmit}>
+              <form name="contact"  method="POST" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden"  name="form-name" value="contact" />               
                 <div>
                   <ContactAppFormGroup>
                     <ContactAppFormControl
@@ -87,7 +103,7 @@ const Contact = () => {
                   <ContactAppFormGroup>
                     <ContactAppFormControl
                       id="email"
-                      type="text"
+                      type="email"
                       name="email"
                       onChange={handleChange}
                       value={formState.email}
