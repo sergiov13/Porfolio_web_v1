@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.sergiodev.com",
-    title: "Personal_Web",
+    description: "Sergio Villarroel Full Stack Software engineer",
+    title: "Sergio's Website'",
+    author: "Sergio Villarorel",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",

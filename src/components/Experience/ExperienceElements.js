@@ -13,7 +13,7 @@ export const StyleSection = styled.div`
     &__title {
       font-size: 18px;
       flex-shrink: 0;
-      width: 200px;
+      width: 300px;
       margin-right: 70px;
       color: #35bdb0;
       text-transform: uppercase;

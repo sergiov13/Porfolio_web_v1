@@ -1,9 +1,9 @@
  export const Skills = {
      skills: {
-        languages: ["JS", "HTML","Python", "Java", "MySQL", "GraphQL"],
-        frameworks: ["React", "Gatsby", "Node", "Test", "Test","Test"],
-        tools: ["Bash", "Git", "Trello", "Jenkins", "Test", "TEst"],
-        testing: ["Selenium", "Blackbox", "Test", "Test", "Test"],
+        languages: ["JavaScript (ES6)", "HTML","Python", "Java", "MySQL", "GraphQL"],
+        frameworks: ["React", "Gatsby", "Node", "Django", "Spring", "Node Js"],
+        tools: ["Bash", "Git", "Trello", "Jenkins", "AWS", "Firebase"],
+        testing: ["Selenium", "Appium", "Blackbox / Whitebox", "Unit Testing"],
      }
 }
 

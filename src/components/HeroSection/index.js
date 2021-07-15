@@ -36,11 +36,10 @@ const HeroSection = () => {
           <Wave />
         </WaveBottom>
         <HeroContent>
-          <HeroH4>Hi! my name is</HeroH4>
+          <HeroP>Hi! my name is</HeroP>
           <HeroH1>Sergio Villarroel</HeroH1>
           <HeroP>
-            {' '}
-            I'm Full Stack Web developer focused on building interactive and responsive Front ends with dynamic backends.
+            I'm a Full Stack Software Engineer focused on building interactive and responsive Frontends with dynamic Backends.
           </HeroP>
           <HeroBtnWrapper>
             <Button

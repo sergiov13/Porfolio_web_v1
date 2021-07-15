@@ -12,7 +12,7 @@ import {
   ImgWrap,
   Img,
 } from './InfoElements'
- import IMG from '../../images/logo-js.png'
+ import IMG from '../../images/me.jpg'
 
 const InfoSection = ({
   lightBg,
@@ -23,6 +23,7 @@ const InfoSection = ({
   headline,
   darkText,
   description,
+  description2,
   buttonLabel,
   img,
   alt,
@@ -40,6 +41,7 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>{description2}</Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>

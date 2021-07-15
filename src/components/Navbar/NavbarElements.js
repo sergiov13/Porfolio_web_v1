@@ -95,28 +95,8 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: 820px){
         display: none;
     }
-`
 
-// export const NavBtnLink = styled.div`
-//     border-radius: 50px;
-//     background: #01bf71;
-//     white-space: nowrap;
-//     padding: 10px 22px;
-//     color: #010606;
-//     font-size: 16px;
-//     outline: none;
-//     border:none ;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
-//     &:hover{
-//         transition: all 0.2s ease-in-out;
-//         background: #fff;
-//         color: #010606
-//     }
-// `
-
-export const NavBtnLink = styled.div`
+    .resume-button{
     color: #64ffda;
     background-color: transparent;
     border: 1px solid #64ffda;
@@ -140,4 +120,5 @@ export const NavBtnLink = styled.div`
     &:after {
     display: none !important;
     }
+}
 `

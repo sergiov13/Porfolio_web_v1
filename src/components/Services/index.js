@@ -1,6 +1,5 @@
 import React from 'react'
 import Icon3 from '../../images/logo-react.png'
-import Icon2 from '../../images/logo-selenium.svg'
 import Icon1 from '../../images/logo-python.svg'
 
 import {
@@ -24,13 +23,6 @@ export const Services = () => {
               <ServicesH2>Spotify Rooms</ServicesH2>
               <ServicesP>
                 Room where people logged into unique rooms could vote for a song. Implemented Python, Django, Spotify API, React, JS.
-              </ServicesP>
-            </ServicesCard>
-            <ServicesCard>
-              <ServicesIcon src={Icon2} />
-              <ServicesH2>QA Automation</ServicesH2>
-              <ServicesP>
-                Web Scrapper implementing Selenium, Python and JS.
               </ServicesP>
             </ServicesCard>
             <ServicesCard>

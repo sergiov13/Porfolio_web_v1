@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SectionGroup = styled.div`
-    background: linear-gradient(to top right, #233554 0%, #0a192f 100%) #0a192f;
+    background: linear-gradient(to top right, #233554 0%, #0a192f 100%);
     height: 720px;
     background-size: cover;
     display: flex;

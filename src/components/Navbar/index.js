@@ -13,6 +13,7 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElements'
+import logo from '../../images/logo.svg'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, SetScrollNav] = useState(false)
@@ -33,13 +34,18 @@ const Navbar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav)
   }, [])
   
+  const ResumeLink = (
+    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      Resume
+    </a>
+  );
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer >
             <NavLogo to="" onClick={toggleHome}>
-              Hello
+              <img src={logo} alt={'Test1'} width="40" />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -52,7 +58,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-81}
                 >
                   About
                 </NavLinks>
@@ -64,7 +70,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-81}
+                  offset={-80}
                 >
                   Experience
                 </NavLinks>
@@ -95,7 +101,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="../../images/Resume.pdf"> Resume </NavBtnLink>
+              {ResumeLink}
             </NavBtn>
           </NavbarContainer>
         </Nav>

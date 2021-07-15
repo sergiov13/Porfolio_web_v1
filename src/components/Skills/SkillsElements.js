@@ -13,7 +13,7 @@ export const StyleSection = styled.div`
     &__title {
       font-size: 18px;
       flex-shrink: 10;
-      width: 200px;
+      width: 300px;
       margin-right: 70px;
       color: #35bdb0;
       text-transform: uppercase;
@@ -64,7 +64,7 @@ export const StyleSection = styled.div`
 `
 
 export const StyledText = styled.div`
-  justify-content: space-evenly;
+  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   @media screen and (max-width: 880px) {
@@ -72,6 +72,7 @@ export const StyledText = styled.div`
     }
   ul {
     list-style: none;
+    padding: 0;
     li {
       position: relative;
       margin-bottom: 10px;
@@ -104,6 +105,7 @@ export const StyledText = styled.div`
         text-transform: uppercase;
       }
       &__item {
+        color:#ccd6f6;
         padding: 1px;
         margin: 5px 0;
         font-size: 0.9rem;

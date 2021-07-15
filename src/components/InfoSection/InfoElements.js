@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper =styled.div`
     display:grid;
     z-index: 1;
-    height: 860px;
+    height: 740px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -89,6 +89,9 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#f0f0f0' : '#0f0f0f')};
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 `
 
 export const BtnWrap = styled.div`
@@ -99,13 +102,16 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 `
 
 export const Img = styled.img`
-    width: 100%;
+    width: 70%;
     margin: 0 0 10px 0;
     padding-right: 0;
-
+    border-radius: 6px;
+    
     @media screen and (max-width: 768px) {
         width: 40%;
         justify-content: top;

@@ -11,6 +11,11 @@ import {
 } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const ResumeLink = (
+    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      Resume
+    </a>
+  );
   return (
     <SidebarContainer isOpen={isOpen} >
       <Icon onClick={toggle}>
@@ -59,8 +64,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             Contact
           </SidebarLink>
           <SideBtnWrap>
-           
-            <SideBarRoute to="/signin"> Resume </SideBarRoute>
+            {ResumeLink}
           </SideBtnWrap>
         </SidebarMenu>
       </SidebarWrapper>

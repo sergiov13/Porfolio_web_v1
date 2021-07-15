@@ -23,8 +23,8 @@ const App = () => {
       <Navbar toggle={toggle}/>
       <HeroSection />
       <InfoSection {...homeObj} />
-      <SkillSection {...Skills }/>
       <ExperienceSection {...Experience}/>
+      <SkillSection {...Skills }/>
       <Services />
       <Contact />
     </>
