@@ -3478,8 +3478,6 @@ var plugins = [{
     "name": "SergioVillarroel",
     "short_name": "SergioVillarroel",
     "start_url": "/",
-    "background_color": "#171c28",
-    "theme_color": "#0a192f",
     "display": "minimal-ui",
     "icon": "src/images/logo.svg",
     "legacy": true,

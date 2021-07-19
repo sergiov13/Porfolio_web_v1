@@ -14,12 +14,11 @@ import {
 } from './NavbarElements'
 import logo from '../../images/logo.svg'
 import { navLinks } from '../../config'
+import { withPrefix } from 'gatsby-link'
 
 const Navbar = ({ toggle }) => {
 
   const [scrollNav, SetScrollNav] = useState(false)
-
-
 
   const changeNav = () => {
     if (window.scrollY >= 70) {
@@ -41,7 +40,7 @@ const Navbar = ({ toggle }) => {
   const ResumeLink = (
     <a
       className="resume-button"
-      href="/resume.pdf"
+      href={withPrefix("/resume.pdf")}
       target="_blank"
       rel="noopener noreferrer"
     >
