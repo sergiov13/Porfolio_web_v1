@@ -10,7 +10,7 @@ import Services from './Services';
 import Contact from './Contact';
 import { Experience } from './Experience/Data';
 import ExperienceSection from './Experience';
-import Head from './Utils/head';
+
 
 
 const App = () => {
