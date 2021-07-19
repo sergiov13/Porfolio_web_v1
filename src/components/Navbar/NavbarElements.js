@@ -3,8 +3,8 @@ import { Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
     background-color: ${({scrollNav}) => (scrollNav ? 'rgba(0,0,0,0.9)' : 'transparent')};
-    height:80px;
-    margin-top: -80px;
+    height:75px;
+    margin-top: -75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 3;
+    transition: background-color 0.4s ease-out;
 
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
@@ -22,7 +23,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 75px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
@@ -72,7 +73,7 @@ export const NavMenu = styled.div`
 `
 
 export const NavItem = styled.li`
-    height: 80px;
+    height: 75px;
 `
 export const NavLinks = styled(LinkS)`
     color: #fff;

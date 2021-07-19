@@ -18,7 +18,7 @@ export const InfoWrapper =styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
-    justify-content: center;
+
     @media screen and (max-width: 768px) {
         height: 450px;
         padding: 5px;
@@ -30,7 +30,7 @@ export const InfoRow = styled.div`
     grid-auto-columns:  minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
-
+    justify-content: space-evenly;
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => ( imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
@@ -46,8 +46,10 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 100px 15px;
     grid-area: col2;
+    justify-content: center;
+    align-items: right;
     
 `
 
@@ -100,6 +102,7 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
+    display:flex;
     max-width: 555px;
     height: 100%;
     justify-content: center;

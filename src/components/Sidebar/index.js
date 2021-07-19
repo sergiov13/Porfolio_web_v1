@@ -7,7 +7,6 @@ import {
   SidebarLink,
   SidebarMenu,
   SideBtnWrap,
-  SideBarRoute,
 } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -17,6 +16,8 @@ const Sidebar = ({ isOpen, toggle }) => {
     </a>
   );
   return (
+    <>
+    
     <SidebarContainer isOpen={isOpen} >
       <Icon onClick={toggle}>
         <CloseIcon />
@@ -69,6 +70,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
+    </>
   )
 }
 

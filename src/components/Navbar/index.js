@@ -11,12 +11,15 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink,
 } from './NavbarElements'
 import logo from '../../images/logo.svg'
+import { navLinks } from '../../config'
 
 const Navbar = ({ toggle }) => {
+
   const [scrollNav, SetScrollNav] = useState(false)
+
+
 
   const changeNav = () => {
     if (window.scrollY >= 70) {
@@ -33,17 +36,24 @@ const Navbar = ({ toggle }) => {
   useEffect(() => {
     window.addEventListener('scroll', changeNav)
   }, [])
-  
+
+
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a
+      className="resume-button"
+      href="/resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       Resume
     </a>
-  );
+  )
+
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
-          <NavbarContainer >
+          <NavbarContainer>
             <NavLogo to="" onClick={toggleHome}>
               <img src={logo} alt={'Test1'} width="40" />
             </NavLogo>
@@ -51,58 +61,24 @@ const Navbar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
-              <NavItem>
-                <NavLinks
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-81}
-                >
-                  About
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="experience"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Experience
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="projects"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Projects
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-60}
-                >
-                  Contact
-                </NavLinks>
-              </NavItem>
+              {navLinks &&
+                navLinks.map((item, i) => (
+                  <NavItem key={i}>
+                    <NavLinks
+                      to={item}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-74}
+                      key={item}
+                    >
+                      {item}
+                    </NavLinks>
+                  </NavItem>
+                ))}
             </NavMenu>
-            <NavBtn>
-              {ResumeLink}
-            </NavBtn>
+            <NavBtn>{ResumeLink}</NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

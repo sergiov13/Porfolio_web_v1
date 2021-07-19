@@ -1,9 +1,12 @@
+const config = require('./src/config');
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.sergiodev.com",
     description: "Sergio Villarroel Full Stack Software engineer",
     title: "Sergio's Website'",
     author: "Sergio Villarorel",
+    image: '/images/og.png',
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
@@ -13,5 +16,17 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'SergioVillarroel',
+        short_name: 'SergioVillarroel',
+        start_url: '/',
+        background_color: config.colors.darkNavy,
+        theme_color: config.colors.navy,
+        display: 'minimal-ui',
+        icon: 'src/images/logo.svg',
+      },
+    },
   ],
 };

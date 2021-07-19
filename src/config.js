@@ -11,48 +11,27 @@ module.exports = {
       url: 'https://www.instagram.com/sergio.v13',
     },
     {
-      name: 'Twitter',
-      url: '',
-    },
-    {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/sergiovillap',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      name: 'Mail',
+      url: 'mailto:sergioworking247@gmail.com',
     },
   ],
 
-  navLinks: [
-    {
-      name: 'About',
-      url: '/#about',
-    },
-    {
-      name: 'Experience',
-      url: '/#jobs',
-    },
-    {
-      name: 'Project',
-      url: '/#projects',
-    },
-    {
-      name: 'Contact',
-      url: '/#contact',
-    },
-  ],
+  navLinks: ["About","Experience","Projects","Contact"],
 
   colors: {
     green: '#64ffda',
     navy: '#0a192f',
-    darkNavy: '#020c1b',
+    darkNavy: '#171c28',
   },
 
-  srConfig: (delay = 200, viewFactor = 0.25) => ({
+  srConfig: (delay = 300, viewFactor = 0.25) => ({
     origin: 'bottom',
     distance: '20px',
-    duration: 500,
+    duration: 400,
     delay,
     rotate: { x: 0, y: 0, z: 0 },
     opacity: 0,

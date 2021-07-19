@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import {
   ContactContainer,
   ContactScreen,
@@ -23,6 +23,8 @@ import {
   WaveTop,
 } from './ContactElements'
 import Wave from '../Wave'
+import sr from '../Utils/sr';
+import { srConfig } from '@config';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -57,12 +59,18 @@ const Contact = () => {
       .catch(error => alert(error))
   }
 
+  const revealContainer = useRef(null);
+
+  useEffect(() => {
+    sr.reveal(revealContainer.current, srConfig());
+  }, []);
+
   return (
-    <SectionGroup id="contact">
+    <SectionGroup id="Contact">
       <WaveTop>
         <Wave />
       </WaveTop>
-      <ContactContainer>
+      <ContactContainer ref={revealContainer}>
         <ContactScreen>
           <ContactScreenHeader>
             <ContactScreenHeaderLeft>

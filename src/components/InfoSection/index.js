@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import {
   InfoContainer,
   InfoWrapper,
@@ -13,6 +13,8 @@ import {
   Img,
 } from './InfoElements'
  import IMG from '../../images/me.jpg'
+ import sr from '../Utils/sr';
+ import { srConfig } from '@config';
 
 const InfoSection = ({
   lightBg,
@@ -31,10 +33,17 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
+
+  const revealContainer = useRef(null);
+
+  useEffect(() => {
+    sr.reveal(revealContainer.current, srConfig());
+  }, []);
+
   return (
     <div>
-      <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
+      <InfoContainer lightBg={lightBg} id={id} >
+        <InfoWrapper ref={revealContainer}>
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>

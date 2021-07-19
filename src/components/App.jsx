@@ -10,23 +10,27 @@ import Services from './Services';
 import Contact from './Contact';
 import { Experience } from './Experience/Data';
 import ExperienceSection from './Experience';
+import Head from './Utils/head';
+
 
 const App = () => {
+
   const [isOpen, SetIsOpen] = useState(false);
 
   const toggle = () => {
     SetIsOpen(!isOpen);
   }
+
   return ( 
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
-      <HeroSection />
-      <InfoSection {...homeObj} />
-      <ExperienceSection {...Experience}/>
-      <SkillSection {...Skills }/>
-      <Services />
-      <Contact />
+    <Sidebar isOpen={isOpen} toggle={toggle}/>
+    <Navbar toggle={toggle} />
+    <HeroSection />
+    <InfoSection {...homeObj} />
+    <ExperienceSection {...Experience}/>
+    <SkillSection {...Skills }/>
+    <Services />
+    <Contact />
     </>
   );
 }
