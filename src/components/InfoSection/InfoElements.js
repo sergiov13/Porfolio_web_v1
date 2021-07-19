@@ -50,7 +50,9 @@ export const Column2 = styled.div`
     grid-area: col2;
     justify-content: center;
     align-items: right;
-    
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
 `
 
 export const TextWrapper = styled.div`
