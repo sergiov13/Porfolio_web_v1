@@ -1,8 +1,14 @@
 export const Experience = {
     jobs: [
         {
+            Company: "Newfold",
+            Time: "2021 - Present",
+            Position: "Full Stack Web Engineer II",
+            Techs: ["Python", "React", "PHP", "Cake", "k8s", "mySQL"],
+        },
+        {
             Company: "Freelance",
-            Time: "2020 - Present",
+            Time: "2020 - 2021",
             Position: "Web Developer",
             Techs: ["Python","React","Javascript","CSS", "GraphQL", "Gatsby"],
         },
