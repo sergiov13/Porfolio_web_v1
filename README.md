@@ -1,8 +1,8 @@
 
 # Pers_Web_v1
-First version of personal website.
-
-Created with Gatsby, React, JS
+<h1 align="center">
+  First version of personal website.
+</h1>
 
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
@@ -10,7 +10,7 @@ Created with Gatsby, React, JS
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Created with Gatsby, React, JS
 </h1>
 
 
